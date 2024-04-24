@@ -1,0 +1,162 @@
+/* Обновленные стили для Sidebar */
+.sidebar {
+  width: 212px;
+  height: 848px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: var(--f-6-f-7-f-8, #f6f7f8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.sidebar .image {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 60px;
+  background: url(https://static16.tgcnt.ru/posts/_0/9e/9eac20ff00f14878830bef478d0dc636.jpg), lightgray 50% / cover no-repeat;
+}
+.sidebar .text {
+  color: var(--333333, #333);
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.15px;
+}
+.sidebar .icon {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  fill: var(--ffdcd-0, #ffdcd0);
+}
+
+/* Обновленные стили для Block */
+.block {
+  width: 264px;
+  height: 206px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: #00306f;
+  box-shadow: 0px 40px 100px -20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.block .icon {
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  fill: white;
+}
+.block .button {
+  width: 184px;
+  height: 47px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--f-6-f-7-f-8, #f6f7f8);
+  box-shadow: 0px 15px 30px -10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.block .button-text {
+  color: #00306F;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Обновленные стили для Card */
+.card {
+  width: 235px;
+  height: 206px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: var(--f-6-f-7-f-8, #f6f7f8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card .title, .card .date {
+  font-family: Arial, sans-serif;
+}
+.card .title {
+  color: var(--4-f-4-f-4-f, #4f4f4f);
+  font-size: 20px;
+  line-height: 101.7%;
+}
+.card .date {
+  color: var(--4-f-4-f-4-f, #4f4f4f);
+  font-size: 16px;
+}
+
+/* Обновленные стили для BlockWithCards */
+.block-with-cards {
+  width: 553px;
+  height: 460px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  background: var(--ffffff, #fff);
+  box-shadow: 0px 40px 100px -20px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.block-with-cards .text {
+  color: var(--4-f-4-f-4-f, #4f4f4f);
+  font-size: 20px;
+  line-height: 101.7%;
+}
+.block-with-cards .cards {
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* Обновленные стили для MainContent */
+.main-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.main-content .row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Обновленные стили для Home */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.home {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 20px;
+}
+.home .row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 20px;
+  width: 100%;
+}

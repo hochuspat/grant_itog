@@ -1,0 +1,474 @@
+/* Home.module.css */
+@import './fonts.css';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+.footer {
+  background-color: #333; /* Цвет фона футера (по желанию) */
+  color: #fff; /* Цвет текста */
+  padding: 20px; /* Внутренний отступ футера (по желанию) */
+  width: 100%;
+
+}
+.centered-h2 {
+  text-align: center; /* Выравнивание текста по центру */
+}
+.contacts {
+  display: flex;
+  justify-content: center; /* Равномерное распределение элементов по ширине футера */
+}
+.content {
+  width: 100%;
+align-items: center;
+justify-content: center;
+min-height: 100vh; /* Чтобы контейнер был посередине страницы */
+}
+
+.info {
+  display: flex; /* Используем flex для контейнера .info */
+  white-space: nowrap; /* Запрет переноса текста на новую строку */
+  align-items: center; /* Выравнивание элементов по вертикали */
+  justify-content: center; /* Выравнивание элементов по центру по горизонтали */
+}
+
+.info p {
+  margin-right: 50px; /* Отступ между элементами в одной строчке */
+  display: inline; /* Убираем display: block */
+}
+
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px); /* Начальное положение при входе */
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0); /* Конечное положение при входе */
+  transition: opacity 300ms, transform 300ms; /* Время анимации */
+}
+.hero {
+  position: relative;
+  width: 104%;
+  height: 80vh;
+  z-index: 1; /* Убедитесь, что главная картинка имеет более низкий z-index */
+}
+
+.heroText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.heroText h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.heroText p {
+    font-size: 1.5rem;
+}
+
+.button {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 28px;
+    background-color: #0056C6;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Добавляем стили для блока с преимуществами */
+.advantages {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.advantages h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Стили для отдельного преимущества */
+.advantage {
+  display: inline-block;
+  margin: 33px 152px;
+}
+
+.advantage img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.advantage p {
+  font-size: 16px;
+}
+
+
+.content h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center; /* Выравнивание текста по центру */
+
+}
+
+.content p {
+    font-size: 1.2rem;
+}
+
+  /* Добавьте стили для блока карты */
+  .map-container {
+    margin-top: 2rem;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Стили для самой карты и ее контролов */
+  .Map {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Стили для контролов карты (если необходимо) */
+  .ymaps-control {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  
+  /* Стили для кнопок управления масштабом (Zoom Control) */
+  .ymaps-zoomcontrol {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  /* Стили для кнопки управления fullscreen (Fullscreen Control) */
+  .ymaps-fullscreencontrol {
+    position: absolute;
+    top: 1rem;
+    right: 4rem;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  /* Стили для текста на кнопках управления */
+  .ymaps-control__text {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Стили для активных кнопок управления (нажатых) */
+  .ymaps-control_state_selected {
+    background-color: #0099ff; /* Цвет активной кнопки */
+    color: #fff; /* Цвет текста активной кнопки */
+  }
+/* Дополнительные стили для отзывов клиентов */
+.testimonials {
+  display: flex;
+  flex-direction: row; /* Отзывы будут располагаться горизонтально */
+  flex-wrap: nowrap; /* Отзывы не переносятся на новую строку */
+  justify-content: flex-start; /* Выравнивание слева */
+  gap: 2rem;
+  
+  overflow-x: auto; /* Горизонтальная прокрутка, если отзывов много */
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.clientPhoto {
+  border-radius: 50%;
+  box-shadow:
+    inset -4px -4px rgba(0, 0, 0, 0.1),
+    inset -8px -8px rgba(0, 0, 0, 0.05),
+    inset -16px -16px rgba(0, 0, 0, 0.025),
+    inset -32px -32px rgba(0, 0, 0, 0.0125);
+}
+
+.clientInfo {
+  margin-top: 1rem;
+}
+
+.clientName {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.clientRole {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.clientText {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+}
+/* Дополнительные стили для навбара */
+/* Общие стили для навбара */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content:  space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: #06172D;
+  color: white;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navigation li {
+  font-size: 1.2rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+}
+
+.userActions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.loginButton,
+.registerButton {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem; /* Добавляем расстояние снизу для кнопки "Регистрация" */
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #06172D;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contactInfo {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border: 10px solid transparent; /* Добавьте невидимую границу */
+  font-size: 0.8rem;
+}
+
+
+
+/* Медиа-запрос для адаптации к маленьким экранам */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+  }
+
+  .navigation li {
+    margin-top: 1rem;
+  }
+
+  .userActions {
+    margin-top: 1rem;
+  }
+}
+
+/* Медиа-запрос для адаптации к большим экранам */
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 2rem;
+  }
+
+  .navigation ul {
+    gap: 3rem;
+  }
+
+  .navigation li {
+    font-size: 1.5rem;
+  }
+
+  .userActions {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .loginButton,
+  .registerButton {
+    margin-left: 2rem;
+  }
+
+  .contactInfo {
+    margin-top: 0;
+  }
+}
+/* Стили для контейнера с текстом о компании */
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: center; /* Центрирование текста внутри блока */
+}
+/* Стили для текста слева (повторно) */
+.leftText2 {
+  order: 4; /* Второй текст слева */
+  margin-right: auto; /* Сдвигаем текст влево */
+}
+.leftText {
+  order: 1; /* Первый текст слева */
+  text-align: left; /* Выравнивание текста влево */
+}
+
+.centerText {
+  order: 2; /* Текст по центру */
+  text-align: center; /* Выравнивание текста по центру */
+}
+
+.rightText {
+  order: 3; /* Текст справа */
+  text-align: right; /* Выравнивание текста вправо */
+}
+.textImageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem; /* Расстояние между блоками */
+}
+.text {
+  flex: 1;
+  padding: 1rem;
+}
+.text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+
+}
+
+.text p {
+  font-size: 1.2rem;
+}.image {
+ 
+    max-width: none;
+    width: auto;
+    height: auto;
+  }
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  animation: fade-in-animation 1s ease-in-out forwards; /* Добавьте forwards */
+}
+
+/* Для изображений */
+.slide-in {
+  transform: translateX(-20px);
+  transition: transform 0.5s ease;
+  animation: slide-in-animation 1s ease-in-out forwards; /* Добавьте forwards */
+}
+
+/* Для элементов, которые должны появляться при прокрутке */
+.textImageContainer.visible .fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.spaceAboveContent {
+  height: 50px; /* Выберите желаемую высоту отступа сверху */
+}
+
+.textImageContainer.visible .slide-in {
+  transform: translateX(0);
+}
+@keyframes fade-in-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in-animation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/* Пример анимации для заголовка */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Home.module.css */
+
+.partners {
+  display: flex; /* Используем Flexbox для расположения элементов в строку */
+  flex-wrap: wrap; /* Переносим элементы на новую строку, если не помещаются в одну строку */
+  justify-content: space-between; /* Распределяем элементы равномерно по ширине блока */
+  align-items: center; /* Выравниваем элементы по вертикали */
+  margin-top: 20px; /* Отступ сверху между заголовком и партнерами */
+  
+}
+.partnerLink {
+  margin: 20px; /* Отступ между партнерами */
+}
