@@ -227,7 +227,7 @@ export default function Home() {
   <div className={styles.contacts}>
     <div className={styles.info}>
       <Fade bottom>
-        <p>Сервис создан при поддержке и финансировании Фонда Содействия инновациям https://fasie.ru</p>
+        <p>Проект выполнен при поддержке «Фонда содействия инновациям» в рамках федерального проекта "Платформа университетского технологического предпринимательства" </p>
         <Image src="/images/logo.jpg" alt="Client 3 photo" width={100} height={100}  />
       </Fade>
     </div>
